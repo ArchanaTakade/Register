@@ -1,0 +1,77 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background-image: url(lamp.jpg);
+    background-size: cover;
+}
+
+.box
+{
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    width: 400px;
+    box-sizing: border-box;
+    padding: 40px 16px;
+    
+}
+
+.box h2
+{
+    text-align: center;
+    color: #f71e5f;
+    margin-bottom: 30px;
+}
+
+.box input
+{
+    margin-bottom: 30px;
+    margin-left: 30px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    box-sizing: border-box;
+    width: 90%;
+}
+
+.box input[type="button"]
+{
+    border-bottom: none;
+    margin-top: 30px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #f71e5f;
+    color: white;
+    position: relative;
+    cursor: pointer;
+    
+}
+
+.box form div
+{
+    position: relative;
+}
+
+.box form div label
+{
+    position: absolute;
+    top: -5px;
+    left: 30px;
+    color: #9999;
+    pointer-events: none;
+    transition: 0.4s; 
+}
+
+.box input:focus~label,.box input:valid~label
+
+{
+    top: -15px;
+    color:#f71e5f;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
